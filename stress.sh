@@ -137,8 +137,7 @@ then
      for line in `terraform output -state=terraform/terraform.tfstate -json solr_node_details|jq '.[] | .name'`
      do
         SOLR_NODE=${line//\"/}
-        echo `
-        SOLR_DIR=`tar --exclude='*/*/*' -tf ${SOLR_TARBALL_NAME} | head -1| cut -d '/' -f 1`
+        SOLR_DIR=`tar --exclude='*/*/*' -tf ${SOLR_TARBALL_PATH} | head -1| cut -d '/' -f 1`
 	ssh -i terraform/id_rsa -oStrictHostKeyChecking=no  solruser@$SOLR_NODE "tar -cf solrlogs-${SOLR_NODE}.tar $SOLR_DIR/server/logs"
 	scp -i terraform/id_rsa -oStrictHostKeyChecking=no  solruser@$SOLR_NODE:solrlogs-${SOLR_NODE}.tar .
         zip logs-${NOW}.zip solrlogs*tar
