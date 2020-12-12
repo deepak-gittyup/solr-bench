@@ -193,6 +193,7 @@ public class StressMain {
 									numInactive = 0;
 									Set<String> inactive = new HashSet<>();
 									ClusterState state = client.getClusterStateProvider().getClusterState();
+									log.info(state.toString());
 									for (String coll: state.getCollectionsMap().keySet()) {
 										for (Slice shard: state.getCollection(coll).getActiveSlices()) {
 											for (Replica replica: shard.getReplicas()) {
