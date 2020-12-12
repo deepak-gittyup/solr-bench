@@ -34,6 +34,7 @@ import org.apache.solr.benchmarks.solrcloud.SolrNode;
 import org.apache.solr.client.solrj.impl.CloudSolrClient;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.client.solrj.request.CollectionAdminRequest.Create;
+import org.apache.solr.client.solrj.response.CollectionAdminResponse;
 import org.apache.solr.common.cloud.ClusterState;
 import org.apache.solr.common.cloud.Replica;
 import org.apache.solr.common.cloud.Slice;
@@ -212,7 +213,9 @@ public class StressMain {
 									System.out.println("\tInactive replicas on restarted node ("+node.getBaseUrl()+"): "+numInactive);
 									if (numInactive != 0) Thread.sleep(1000);
 								} while (numInactive > 0);
-							}				        
+							} catch (Exception ex) {
+								ex.printStackTrace();
+							}
 
 						}
 						long taskEnd = System.currentTimeMillis();
@@ -302,7 +305,8 @@ public class StressMain {
 												setMaxShardsPerNode(coll.getShards().size()).
 												setCreateNodeSet(nodeSet);
 										Map<String, String> additional = clusterStateBenchmark.collectionCreationParams==null? new HashMap<>(): clusterStateBenchmark.collectionCreationParams;
-										new CreateWithAdditionalParameters(create, name, additional).process(client);
+										CollectionAdminResponse rsp = new CreateWithAdditionalParameters(create, name, additional).process(client);
+										log.info("Collection created: "+rsp.getStatus()+", error message: "+rsp.getErrorMessages());
 									}
 
 									int currentCounter = collectionCounter.incrementAndGet();
