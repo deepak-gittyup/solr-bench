@@ -25,7 +25,7 @@
             "cluster-state-benchmark": {
                "filename": "clusterstatus_clusterstatus.json",
                "collection-creation-params": {"perReplicaState": "true"},
-               "collections-limit": 10,
+               "collections-limit": 2000,
                "simulation-concurrency-fraction": 0.5
              }
         },
@@ -66,8 +66,8 @@
         }       ,
         "task2": {
             "description": "Restart Solr node",
-            "instances": 3,
-            "concurrency": 1,
+            "instances": 15,
+            "concurrency": 5,
             "type": "restart-solr-node",
             "parameters": {
                "NODE_INDEX": "${restart-counter}"
@@ -82,17 +82,17 @@
     },
 
   "cluster": {
-    "num-solr-nodes": 4,
-    "jdk-url": "http://enos.itcollege.ee/~jpoial/allalaadimised/jdk8/jdk-8u241-linux-x64.tar.gz",
-    "jdk-tarball": "jdk-8u241-linux-x64.tar.gz",
-    "jdk-directory": "jdk1.8.0_241",
-    "startup-params": "-m 1g",
+    "num-solr-nodes": 16,
+    "jdk-url": "http://ghaffarian.net/downloads/Java/jdk-8u202-linux-x64.tar.gz",
+    "jdk-tarball": "jdk-8u202-linux-x64.tar.gz",
+    "jdk-directory": "jdk1.8.0_202",
+    "startup-params": "-m 12g",
     "provisioning-method": "terraform-gcp",
     "terraform-gcp-config": {
         "project_id" : "bold-gadget-222718",
         "zookeeper_machine_type" : "n1-standard-2",
         "zookeeper_disk_type" : "pd-ssd",
-        "solr_node_count" : 4,
+        "solr_node_count" : 16,
         "solr_machine_type" : "n1-standard-4",
         "solr_disk_type"  : "pd-ssd",
         "tags" : ["benchmarking", "solr", "temp"],
