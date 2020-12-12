@@ -300,7 +300,8 @@ public class StressMain {
 
 									String nodeSet = "";
 									for (int n: nodes) {
-										nodeSet += cloud.nodes.get(n).getNodeName() + "_solr,";
+										nodeSet += cloud.nodes.get(n).getNodeName() + 
+												(cloud.nodes.get(n).getNodeName().endsWith("_solr")? "": "_solr") +",";
 									}
 									nodeSet = nodeSet.substring(0, nodeSet.length()-1);
 									shardCounter.addAndGet(coll.getShards().size());
@@ -309,7 +310,7 @@ public class StressMain {
 									try (HttpSolrClient client = new HttpSolrClient.Builder(cloud.nodes.get(nodes.iterator().next()).getBaseUrl()).build();) {
 										Create create = Create.createCollection(name, coll.getShards().size(), 1).
 												setMaxShardsPerNode(coll.getShards().size())
-												; //.setCreateNodeSet(nodeSet);
+												.setCreateNodeSet(nodeSet);
 										Map<String, String> additional = clusterStateBenchmark.collectionCreationParams==null? new HashMap<>(): clusterStateBenchmark.collectionCreationParams;
 										CollectionAdminResponse rsp = new CreateWithAdditionalParameters(create, name, additional).process(client);
 										//log.info("Collection created: "+rsp.getStatus()+", error message: "+rsp.getErrorMessages());
