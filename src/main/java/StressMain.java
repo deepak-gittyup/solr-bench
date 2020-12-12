@@ -27,8 +27,10 @@ import org.apache.solr.benchmarks.BenchmarksMain;
 import org.apache.solr.benchmarks.MetricsCollector;
 import org.apache.solr.benchmarks.beans.Cluster;
 import org.apache.solr.benchmarks.solrcloud.CreateWithAdditionalParameters;
+import org.apache.solr.benchmarks.solrcloud.GenericSolrNode;
 import org.apache.solr.benchmarks.solrcloud.LocalSolrNode;
 import org.apache.solr.benchmarks.solrcloud.SolrCloud;
+import org.apache.solr.benchmarks.solrcloud.SolrNode;
 import org.apache.solr.client.solrj.impl.CloudSolrClient;
 import org.apache.solr.client.solrj.impl.HttpSolrClient;
 import org.apache.solr.client.solrj.request.CollectionAdminRequest.Create;
@@ -176,7 +178,7 @@ public class StressMain {
 					} else if (type.restartSolrNode != null) {
 						String nodeIndex = resolveString(resolveString(type.restartSolrNode, params), workflow.globalConstants);
 						long taskStart = System.currentTimeMillis();
-						LocalSolrNode node = ((LocalSolrNode)cloud.nodes.get(Integer.valueOf(nodeIndex) - 1));
+						SolrNode node = cloud.nodes.get(Integer.valueOf(nodeIndex) - 1);
 						try {
 							node.restart();
 						} catch (Exception ex) {
@@ -195,7 +197,8 @@ public class StressMain {
 										for (Slice shard: state.getCollection(coll).getActiveSlices()) {
 											for (Replica replica: shard.getReplicas()) {
 												if (replica.getState() != Replica.State.ACTIVE) {
-													if (replica.getNodeName().contains(node.port)) {
+													if (node instanceof LocalSolrNode && replica.getNodeName().contains(((LocalSolrNode)node).port)
+															|| node instanceof GenericSolrNode && replica.getNodeName().contains(node.getNodeName())) {
 														numInactive++;
 														inactive.add(replica.getName());
 														//System.out.println("\tNon active Replica: "+replica.getName()+" in "+replica.getNodeName());
@@ -204,7 +207,7 @@ public class StressMain {
 											}
 										}
 									}
-									System.out.println("\tInactive replicas on restarted node ("+node.port+"): "+numInactive);
+									System.out.println("\tInactive replicas on restarted node ("+node.getBaseUrl()+"): "+numInactive);
 									if (numInactive != 0) Thread.sleep(1000);
 								} while (numInactive > 0);
 							}				        
