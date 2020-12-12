@@ -199,7 +199,7 @@ public class StressMain {
 										for (Slice shard: state.getCollection(coll).getActiveSlices()) {
 											for (Replica replica: shard.getReplicas()) {
 												if (replica.getState() != Replica.State.ACTIVE) {
-													log.info("Checking if "+replica.getNodeName()+" contains "+node.getNodeName());
+													//log.info("Checking if "+replica.getNodeName()+" contains "+node.getNodeName());
 													if (node instanceof LocalSolrNode && replica.getNodeName().contains(((LocalSolrNode)node).port)
 															|| node instanceof GenericSolrNode && replica.getNodeName().contains(node.getNodeName())) {
 														numInactive++;
@@ -269,6 +269,12 @@ public class StressMain {
 								nodeMap.put(status.getCluster().getLiveNodes().get(j), j % cloud.nodes.size());
 							}
 							log.info("Node mapping: "+nodeMap);
+							
+							try (CloudSolrClient client = new CloudSolrClient.Builder().withSolrUrl(cloud.nodes.get(0).getBaseUrl()).build();) {
+									ClusterState state = client.getClusterStateProvider().getClusterState();
+									log.info("Live nodes: "+state.getLiveNodes());
+							}
+
 							log.info("Summary: "+status.getCluster().getCollections().size()+" collections loaded, to be executed across "+status.getCluster().getLiveNodes().size()+" nodes. Total shards: "+shards);
 
 							// Start the simulation
