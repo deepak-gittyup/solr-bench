@@ -194,7 +194,7 @@ public class StressMain {
 									numInactive = 0;
 									Set<String> inactive = new HashSet<>();
 									ClusterState state = client.getClusterStateProvider().getClusterState();
-									log.info(state.toString());
+									//log.info(state.toString());
 									for (String coll: state.getCollectionsMap().keySet()) {
 										for (Slice shard: state.getCollection(coll).getActiveSlices()) {
 											for (Replica replica: shard.getReplicas()) {
@@ -312,7 +312,7 @@ public class StressMain {
 												; //.setCreateNodeSet(nodeSet);
 										Map<String, String> additional = clusterStateBenchmark.collectionCreationParams==null? new HashMap<>(): clusterStateBenchmark.collectionCreationParams;
 										CollectionAdminResponse rsp = new CreateWithAdditionalParameters(create, name, additional).process(client);
-										log.info("Collection created: "+rsp.getStatus()+", error message: "+rsp.getErrorMessages());
+										//log.info("Collection created: "+rsp.getStatus()+", error message: "+rsp.getErrorMessages());
 									}
 
 									int currentCounter = collectionCounter.incrementAndGet();
