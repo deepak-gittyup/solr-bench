@@ -302,8 +302,8 @@ public class StressMain {
 
 									try (HttpSolrClient client = new HttpSolrClient.Builder(cloud.nodes.get(nodes.iterator().next()).getBaseUrl()).build();) {
 										Create create = Create.createCollection(name, coll.getShards().size(), 1).
-												setMaxShardsPerNode(coll.getShards().size()).
-												setCreateNodeSet(nodeSet);
+												setMaxShardsPerNode(coll.getShards().size())
+												; //.setCreateNodeSet(nodeSet);
 										Map<String, String> additional = clusterStateBenchmark.collectionCreationParams==null? new HashMap<>(): clusterStateBenchmark.collectionCreationParams;
 										CollectionAdminResponse rsp = new CreateWithAdditionalParameters(create, name, additional).process(client);
 										log.info("Collection created: "+rsp.getStatus()+", error message: "+rsp.getErrorMessages());
