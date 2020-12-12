@@ -197,6 +197,7 @@ public class StressMain {
 										for (Slice shard: state.getCollection(coll).getActiveSlices()) {
 											for (Replica replica: shard.getReplicas()) {
 												if (replica.getState() != Replica.State.ACTIVE) {
+													log.info("Checking if "+replica.getNodeName()+" contains "+node.getNodeName());
 													if (node instanceof LocalSolrNode && replica.getNodeName().contains(((LocalSolrNode)node).port)
 															|| node instanceof GenericSolrNode && replica.getNodeName().contains(node.getNodeName())) {
 														numInactive++;
