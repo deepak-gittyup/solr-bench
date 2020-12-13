@@ -78,7 +78,7 @@ terraform-gcp-provisioner() {
      ./startzk.sh
 
      max_parallel=8 # Start up 8 nodes at a time
-     num=0
+     num=$(($max_parallel-1)); # first batch should only run a single solr so that it becomes overseer
      for line in `terraform output -state=terraform/terraform.tfstate -json solr_node_details|jq '.[] | .name'`
      do
           SOLR_NODE=${line//\"/}
