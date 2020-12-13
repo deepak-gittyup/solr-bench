@@ -77,12 +77,21 @@ terraform-gcp-provisioner() {
 
      ./startzk.sh
 
+     max_parallel=8 # Start up 8 nodes at a time
+     num=0
      for line in `terraform output -state=terraform/terraform.tfstate -json solr_node_details|jq '.[] | .name'`
      do
           SOLR_NODE=${line//\"/}
           echo_blue "Starting Solr on $SOLR_NODE"
-          ./startsolr.sh $SOLR_NODE
+          ./startsolr.sh $SOLR_NODE &
+	  num=$(($num+1));
+          if [ $num -eq $max_parallel ]
+          then
+              wait; # wait for all spawned background procs
+              num=0
+          fi
      done
+     wait; # wait for remaining procs
 }
 
 # Download the pre-requisites
