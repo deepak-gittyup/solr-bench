@@ -33,5 +33,13 @@ Example: config.json (GCP), config-local.json (Local mode). For GCP, you need to
 * The configset should be zipped, and "index-benchmarks" section should have the name of the file (without the .zip) as "configset".
 * The query file should have GET parameters that will be queried against /select.
 
+### Plotting the results
+
+Once you have the results in a dir, say, `results/experiment1`, and you want to plot heap usage of a Solr node (hardcoded to the 7th node at the moment), beginning the task2, then
+
+    ./plot.sh results experiment1 task2 jvm/solr.jvm/memory.heap.used
+
+will generate a experiment1.png file containing the plot.
+
 ### Acknowledgement
 This started as a project funded by Google Summer of Code (SOLR-10317), later supported by FullStory.
