@@ -32,12 +32,12 @@ with open(sys.argv[1]) as file:
         output += "," + n
     output += "\n"
 
-    multiFactor = 1/1024/1024/1024
+    multiFactor = 1
     for i in range(numPoints):
         if (i*2 < startingTimestamp):
             continue
         line = str(int(i*2 - startingTimestamp))
-        for n in nodeNames:
+        for n in natsorted(nodeNames):
             val = "-1"
             #print ("i is: "+str(i)+", len is "+len(results[n][metric]))
             if i < len(metrics[n][metric]):
