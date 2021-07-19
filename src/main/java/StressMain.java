@@ -256,13 +256,13 @@ public class StressMain {
 
 						// resolve the collection name using template
 						Map<String, String> solrurlMap = Map.of("SOLRURL", cloud.nodes.get(new Random().nextInt(cloud.nodes.size())).getBaseUrl());
-						String collectionName = resolveString(type.indexBenchmark.setups.get(0).collection, params);
+						String collectionName = resolveString(type.queryBenchmark.collection, params);
 
 						log.info("Global variables: "+instance.parameters);
 						log.info("Query benchmarks for collection: "+collectionName);
 
 						Map<String, Map> results = new HashMap<String, Map>();
-						results.put("indexing-benchmarks", new LinkedHashMap<String, List<Map>>());
+						results.put("query-benchmarks", new LinkedHashMap<String, List<Map>>());
 						long taskStart = System.currentTimeMillis();
 						try {
 							BenchmarksMain.runQueryBenchmarks(Collections.singletonList(type.queryBenchmark), cloud, results);
