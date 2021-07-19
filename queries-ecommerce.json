@@ -1,120 +1,120 @@
-{'query': 'event_time:[2019-10-23T00:00:00Z TO 2019-10-24T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-07T00:00:00Z TO 2019-10-08T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-05T00:00:00Z TO 2019-10-06T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-12T00:00:00Z TO 2019-10-13T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-04T00:00:00Z TO 2019-10-05T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-06T00:00:00Z TO 2019-10-07T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-08T00:00:00Z TO 2019-10-09T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-09T00:00:00Z TO 2019-10-10T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-22T00:00:00Z TO 2019-10-26T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-14T00:00:00Z TO 2019-10-15T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-25T00:00:00Z TO 2019-10-26T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-29T00:00:00Z TO 2019-10-30T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-10T00:00:00Z TO 2019-10-11T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-15T00:00:00Z TO 2019-10-16T00:00:00Z]'], 'limit': 10}
 {'query': 'event_time:[2019-10-24T00:00:00Z TO 2019-10-25T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-29T00:00:00Z TO 2019-10-30T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-02T00:00:00Z TO 2019-10-03T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-30T00:00:00Z TO 2019-10-34T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-04T00:00:00Z TO 2019-10-05T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-02T00:00:00Z TO 2019-10-06T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-28T00:00:00Z TO 2019-10-29T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-27T00:00:00Z TO 2019-10-28T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-06T00:00:00Z TO 2019-10-10T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-30T00:00:00Z TO 2019-10-31T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-15T00:00:00Z TO 2019-10-16T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-16T00:00:00Z TO 2019-10-17T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-12T00:00:00Z TO 2019-10-13T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-04T00:00:00Z TO 2019-10-05T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-10T00:00:00Z TO 2019-10-14T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-13T00:00:00Z TO 2019-10-14T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-19T00:00:00Z TO 2019-10-20T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-28T00:00:00Z TO 2019-10-32T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-05T00:00:00Z TO 2019-10-09T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-06T00:00:00Z TO 2019-10-07T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-08T00:00:00Z TO 2019-10-09T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-30T00:00:00Z TO 2019-10-31T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-14T00:00:00Z TO 2019-10-15T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-09T00:00:00Z TO 2019-10-10T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-20T00:00:00Z TO 2019-10-24T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-07T00:00:00Z TO 2019-10-08T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-10T00:00:00Z TO 2019-10-11T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-25T00:00:00Z TO 2019-10-26T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-27T00:00:00Z TO 2019-10-28T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-06T00:00:00Z TO 2019-10-07T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-22T00:00:00Z TO 2019-10-23T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-18T00:00:00Z TO 2019-10-19T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-09T00:00:00Z TO 2019-10-13T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-05T00:00:00Z TO 2019-10-06T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-21T00:00:00Z TO 2019-10-22T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-23T00:00:00Z TO 2019-10-24T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-12T00:00:00Z TO 2019-10-13T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-19T00:00:00Z TO 2019-10-20T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-05T00:00:00Z TO 2019-10-06T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-16T00:00:00Z TO 2019-10-20T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-17T00:00:00Z TO 2019-10-18T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-26T00:00:00Z TO 2019-10-27T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-17T00:00:00Z TO 2019-10-18T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-07T00:00:00Z TO 2019-10-11T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-04T00:00:00Z TO 2019-10-08T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-14T00:00:00Z TO 2019-10-15T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-21T00:00:00Z TO 2019-10-22T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-12T00:00:00Z TO 2019-10-13T00:00:00Z]'], 'limit': 10}
 {'query': 'event_time:[2019-10-26T00:00:00Z TO 2019-10-27T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-28T00:00:00Z TO 2019-10-29T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-16T00:00:00Z TO 2019-10-17T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-08T00:00:00Z TO 2019-10-09T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-03T00:00:00Z TO 2019-10-04T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
 {'query': 'event_time:[2019-10-29T00:00:00Z TO 2019-10-30T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-12T00:00:00Z TO 2019-10-16T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-18T00:00:00Z TO 2019-10-19T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-04T00:00:00Z TO 2019-10-05T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-14T00:00:00Z TO 2019-10-18T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-06T00:00:00Z TO 2019-10-07T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-03T00:00:00Z TO 2019-10-04T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-02T00:00:00Z TO 2019-10-03T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-19T00:00:00Z TO 2019-10-20T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-25T00:00:00Z TO 2019-10-29T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-27T00:00:00Z TO 2019-10-31T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-26T00:00:00Z TO 2019-10-27T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-03T00:00:00Z TO 2019-10-07T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-23T00:00:00Z TO 2019-10-27T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-25T00:00:00Z TO 2019-10-26T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-09T00:00:00Z TO 2019-10-10T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-21T00:00:00Z TO 2019-10-22T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-02T00:00:00Z TO 2019-10-03T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-13T00:00:00Z TO 2019-10-17T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-21T00:00:00Z TO 2019-10-25T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-26T00:00:00Z TO 2019-10-30T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-11T00:00:00Z TO 2019-10-15T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-10T00:00:00Z TO 2019-10-11T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-27T00:00:00Z TO 2019-10-28T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-16T00:00:00Z TO 2019-10-17T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-15T00:00:00Z TO 2019-10-19T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-29T00:00:00Z TO 2019-10-30T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-01T00:00:00Z TO 2019-10-05T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-24T00:00:00Z TO 2019-10-28T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-23T00:00:00Z TO 2019-10-24T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-24T00:00:00Z TO 2019-10-25T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-03T00:00:00Z TO 2019-10-04T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-07T00:00:00Z TO 2019-10-08T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-11T00:00:00Z TO 2019-10-12T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-24T00:00:00Z TO 2019-10-25T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-11T00:00:00Z TO 2019-10-12T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
 {'query': 'event_time:[2019-10-07T00:00:00Z TO 2019-10-08T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
 {'query': 'event_time:[2019-10-13T00:00:00Z TO 2019-10-14T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-05T00:00:00Z TO 2019-10-06T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-30T00:00:00Z TO 2019-10-31T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-14T00:00:00Z TO 2019-10-15T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-14T00:00:00Z TO 2019-10-15T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-03T00:00:00Z TO 2019-10-04T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-11T00:00:00Z TO 2019-10-12T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-26T00:00:00Z TO 2019-10-27T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-10T00:00:00Z TO 2019-10-11T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-20T00:00:00Z TO 2019-10-21T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-04T00:00:00Z TO 2019-10-05T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-27T00:00:00Z TO 2019-10-28T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-12T00:00:00Z TO 2019-10-13T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-27T00:00:00Z TO 2019-10-28T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-08T00:00:00Z TO 2019-10-09T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-08T00:00:00Z TO 2019-10-12T00:00:00Z]'], 'limit': 10}
 {'query': 'event_time:[2019-10-20T00:00:00Z TO 2019-10-21T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-28T00:00:00Z TO 2019-10-29T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-02T00:00:00Z TO 2019-10-03T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-25T00:00:00Z TO 2019-10-26T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-17T00:00:00Z TO 2019-10-18T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-03T00:00:00Z TO 2019-10-04T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-30T00:00:00Z TO 2019-10-31T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-24T00:00:00Z TO 2019-10-25T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-15T00:00:00Z TO 2019-10-16T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-18T00:00:00Z TO 2019-10-19T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-19T00:00:00Z TO 2019-10-20T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-09T00:00:00Z TO 2019-10-10T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-10T00:00:00Z TO 2019-10-11T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-19T00:00:00Z TO 2019-10-20T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-25T00:00:00Z TO 2019-10-26T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-22T00:00:00Z TO 2019-10-23T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-16T00:00:00Z TO 2019-10-17T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-23T00:00:00Z TO 2019-10-24T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-16T00:00:00Z TO 2019-10-17T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-11T00:00:00Z TO 2019-10-12T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-18T00:00:00Z TO 2019-10-19T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-22T00:00:00Z TO 2019-10-23T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-11T00:00:00Z TO 2019-10-12T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-28T00:00:00Z TO 2019-10-29T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-23T00:00:00Z TO 2019-10-24T00:00:00Z]'], 'limit': 10}
 {'query': 'event_time:[2019-10-15T00:00:00Z TO 2019-10-16T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-21T00:00:00Z TO 2019-10-22T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': 'event_time:[2019-10-21T00:00:00Z TO 2019-10-22T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-28T00:00:00Z TO 2019-10-29T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
 {'query': 'event_time:[2019-10-13T00:00:00Z TO 2019-10-14T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-08T00:00:00Z TO 2019-10-09T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
-{'query': 'event_time:[2019-10-06T00:00:00Z TO 2019-10-07T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': 'event_time:[2019-10-17T00:00:00Z TO 2019-10-18T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
-{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:event_time:[2019-10-01T00:00:00Z TO 2019-10-02T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-18T00:00:00Z TO 2019-10-22T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-17T00:00:00Z TO 2019-10-21T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-19T00:00:00Z TO 2019-10-23T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-09T00:00:00Z TO 2019-10-10T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-17T00:00:00Z TO 2019-10-18T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-29T00:00:00Z TO 2019-10-33T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-02T00:00:00Z TO 2019-10-03T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-22T00:00:00Z TO 2019-10-23T00:00:00Z]'], 'limit': 10}
+{'query': '*:*', 'filter': ['{!join from=user_session to=user_session}event_time:[2019-10-20T00:00:00Z TO 2019-10-21T00:00:00Z]'], 'limit': 10}
+{'query': 'event_time:[2019-10-18T00:00:00Z TO 2019-10-19T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-20T00:00:00Z TO 2019-10-21T00:00:00Z]', 'filter': 'event_type:purchase', 'limit': 1, 'facet': {'avg_price': 'avg(price)', 'prices': {'type': 'terms', 'field': 'product_id'}}}
+{'query': 'event_time:[2019-10-05T00:00:00Z TO 2019-10-06T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-30T00:00:00Z TO 2019-10-31T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
+{'query': 'event_time:[2019-10-22T00:00:00Z TO 2019-10-23T00:00:00Z]', 'limit': 0, 'facet': {'categories': {'type': 'terms', 'field': 'event_type'}}}
