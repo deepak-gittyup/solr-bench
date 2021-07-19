@@ -51,7 +51,7 @@
 					        "json-query" : true,
                   "shuffle": false,
 						      "rpm": 3000,
-						            "total-count" : 120,
+						            "total-count" : 240,
 							          "warm-count": 10
 								 }
   ],
