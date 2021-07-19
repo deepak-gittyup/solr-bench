@@ -31,7 +31,7 @@
     },
     "global-variables": {
         "collection-counter": 0,
-        "restart-counter": 1
+        "restart-counter": 0
     },
     "global-constants": {
         "HOST": "localhost",
@@ -42,7 +42,7 @@
             "type": "indexing",
             "instances": 1,
             "concurrency": 1,
-            "mode": "sync",
+            "mode": "sync"
         },
         
         "task2": {
