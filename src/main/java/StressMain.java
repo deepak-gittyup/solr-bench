@@ -276,7 +276,7 @@ public class StressMain {
 							String totalTime = String.valueOf(taskEnd - taskStart);
 							
 							finalResults.get(taskName).add(Map.of("total-time", totalTime, "start-time", (taskStart-executionStart)/1000.0,
-									"end-time", (taskEnd-executionStart)/1000.0, "timings", results.get("query-benchmarks").entrySet().iterator().next()));
+									"end-time", (taskEnd-executionStart)/1000.0, "timings", ((Map.Entry)results.get("query-benchmarks").entrySet().iterator().next()).getValue()));
 						} catch (Exception ex) {
 							ex.printStackTrace();
 						}
