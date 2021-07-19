@@ -37,7 +37,7 @@
                                   "total-count" : 10000,
                                     "warm-count": 20
                                }
-      }
+      },
       "restart-solr-node": {
         	"restart-solr-node": "${NODE_INDEX}",
         	"await-recoveries": true
