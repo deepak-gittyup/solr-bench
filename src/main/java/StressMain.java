@@ -272,8 +272,11 @@ public class StressMain {
 						long taskEnd = System.currentTimeMillis();
 						log.info("Results: "+results.get("query-benchmarks"));
 						try {
-							String totalTime = ((List<Map>)((Map.Entry)((Map)((Map.Entry)results.get("query-benchmarks").entrySet().iterator().next()).getValue()).entrySet().iterator().next()).getValue()).get(0).get("total-time").toString();
-							finalResults.get(taskName).add(Map.of("total-time", totalTime, "start-time", (taskStart-executionStart)/1000.0, "end-time", (taskEnd-executionStart)/1000.0));
+							//String totalTime = ((List<Map>)((Map.Entry)((Map)((Map.Entry)results.get("query-benchmarks").entrySet().iterator().next()).getValue()).entrySet().iterator().next()).getValue()).get(0).get("total-time").toString();
+							String totalTime = String.valueOf(taskEnd - taskStart);
+							
+							finalResults.get(taskName).add(Map.of("total-time", totalTime, "start-time", (taskStart-executionStart)/1000.0,
+									"end-time", (taskEnd-executionStart)/1000.0, "timings", results.get("query-benchmarks").entrySet().iterator().next()));
 						} catch (Exception ex) {
 							ex.printStackTrace();
 						}
