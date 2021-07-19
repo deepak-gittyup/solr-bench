@@ -79,6 +79,7 @@
             "type": "querying",
             "instances": 1,
             "concurrency": 1,
+            "wait-for": "task2",
             "mode": "sync"
         }
 
