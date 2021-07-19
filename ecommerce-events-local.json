@@ -51,8 +51,8 @@
 					        "json-query" : true,
                   "shuffle": false,
 						      "rpm": 3000,
-						            "total-count" : 172800,
-							          "warm-count": 100
+						            "total-count" : 2880,
+							          "warm-count": 20
 								 }
   ],
   "metrics": ["jvm/solr.jvm/memory.heap.usage"]
